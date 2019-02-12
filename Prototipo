@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+srand(time(NULL));
+int produto [10][2];
+int op;
+int prazo,preco;
+
+  for (int i=0; i < 10; i++)  {
+      for (int j = 0; j<2;j++) {
+          
+        // gerando valores aleatC3rios na faixa de 0 a 100
+        produto[i][j] = rand() %100;
+        
+        printf("%i\t ",produto[i][j]);
+        preco = produto[i][1];
+        prazo = produto[1][j];
+    }
+  printf("\n");
+ }    
+ 
+ 
+ printf ("Escolha a opção: 1 - Preco / 2 - Prazo");
+ scanf("%i",&op);
+ switch (op){
+     
+     case 1:
+         for (int i = 0; i<10;i++){
+            for (int j = 0; j<10;j++){
+         
+            if(produto[i][j] > Prazo){
+             
+             
+             
+             }
+         
+            }
+        }    
+     
+     
+     break;
+     
+     case 2:
+     
+     break;
+     
+ }
+ 
+ 
+ for (int i = 0; i<10;i++){
+     for (int j = 0; j<10;j++){
+         
+     }
+ }
+    
+    
+
+    return 0;
+}
